@@ -65,12 +65,5 @@ public class DateOfBirth {
 	{
 		System.out.println("DATE OF BIRTH: "+day+"/"+month+"/"+year);
 	}
-	public static void main(String[]args) 
-	{
-		// goi ham khong doi so
-		DateOfBirth yen= new DateOfBirth();
-		yen.input();
-		yen.output();
-
-	}
+	
 }

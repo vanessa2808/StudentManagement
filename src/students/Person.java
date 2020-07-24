@@ -33,6 +33,7 @@ public class Person
 		add= new Address();
 		add.input();
 	}
+	
 	public void output() 
 	{
 		System.out.println("Name: "+name);
@@ -41,13 +42,5 @@ public class Person
 		dob.output();
 		add.output();
 	}
-	public static void main(String[]args) 
-	{
-		System.out.println("______________________________");
-		Person p1=new Person();
-		p1.input();
-		p1.output();
-		System.out.println("______________________________");
-		
-	}
+	
 }

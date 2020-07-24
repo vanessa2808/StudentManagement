@@ -60,11 +60,6 @@ public class Address
 	{
 		System.out.println("ADDRESS: "+numberhouse+" " +street+" "+dictric+" "+city);
 	}
-	public static void main(String []args) 
-	{
-		Address add= new Address();
-		add.input();
-		add.output();
-	}
+	
 
 }

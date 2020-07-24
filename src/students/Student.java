@@ -8,6 +8,12 @@ public  class Student extends Person
 		super();
 		this.studentID = null;
 	}
+	public String getStudentID() {
+		return studentID;
+	}
+	public void setStudentID(String studentID) {
+		this.studentID = studentID;
+	}
 	public Student(String name,boolean sex, String studentID, DateOfBirth dob, Address add, int studentyears ) {
 		super(name,sex,dob,add);
 		this.studentID = studentID;
@@ -21,20 +27,23 @@ public  class Student extends Person
 		System.out.println("Enter student year");
 		studentyears = sc.nextInt();
 	}
-	
-	
+	public String toString() {
+        return "Student{" +
+                "studentID=" + studentID +
+                ", name='" + name   +
+                ", add='" + add  +
+                ", sex='" + sex + 
+                ", dob='" + dob +
+                ", studentyears='" + studentyears +
+                '}';
+    }
+
 	
 	public void output() {
 		super.output();
 		System.out.println("studentID "+ studentID);
 		System.out.println("studentyears"+ studentyears);
 	}
-	public static void main(String[]args) 
-	{
-
-		Student yen = new Student();
-		yen.input();
-		yen.output();
-	}	
+	
 }
 
