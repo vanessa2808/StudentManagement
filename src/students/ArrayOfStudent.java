@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class ArrayOfStudent {
 	private static Scanner sc;
 	private int n;
-	private Student []a= new Student[100];
+	private Student []a= new Student[3];
 	public void input() {
 		sc= new Scanner (System.in);
 		System.out.println("Enter n: ");
@@ -58,7 +58,7 @@ public class ArrayOfStudent {
 	}
 	
 	public void remove(int index) {
-		for(int i= index;i<n;i++) {
+		for(int i= index;i<n-1;i++) {
 			a[i]=a[i+1];
 		}
 		n--;
